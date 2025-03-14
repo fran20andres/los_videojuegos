@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Press Start 2P', sans-serif; /* Fuente estilo retro gaming */
+    background-color: #121212; /* Negro azulado, similar a los juegos clásicos */
+    color: #ffcc00; 
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+header {
+    width: 80%;
+    background: #1a1a1a; /* Negro oscuro */
+    color: #ff007f; /* Rosa neón */
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    border-bottom: 3px solid #00f891;
+}
+header h1 {
+    font-size: 42px;
+    color: #ff007f; /* Rosa neón */
+    text-shadow:
+        0 0 20px #ff00ff, /* Resplandor */
+        0 0 40px #ff00ff; /* Efecto neón más fuerte */
+    animation: glow 1.5s infinite alternate;
+}
+
+main{
+    display: flex;
+    gap: 20px; /* Espacio entre las secciones */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    background: #222831;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #393E46; /* Gris metálico */
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.5); /* Sombra cian neón */
+    flex: 1; /* Permite que todas las secciones ocupen el mismo espacio */
+    max-width: 300px; /* Ajusta el ancho de cada sección */
+    transition: transform 0.3s ease-in-out;
+   
+}
+section:hover img {
+    transform: rotate(5deg) scale(1.05); /* Gira 5° y crece un poco */
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+}
+main2 {
+    display: flex;
+    gap: 20px; /* Espacio entre las secciones */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;  
+}
+button{
+    background: #00ffcc;
+    color:#121212;
+    padding: 12px;
+    border:none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+button:hover {
+    background:  #008080;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+    transform: scale(1.1);
+}
+
+img {
+     
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 8px 16px rgba(0, 255, 204, 0.5);
+    width: 100%;  /* Ajusta la imagen al ancho del contenedor */
+    height: 250px; /* Tamaño fijo en altura */
+    object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    object-fit: cover;
+    
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+    margin: 5px 0;
+    font-size: 22px;
+    color: #ffcc00; /* Amarillo neón */
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
