@@ -72,6 +72,21 @@ header h1 {
     color: #BF00FF; 
     text-shadow: 0 0 20px #BF00FF, 0px 0px 80px #BF00FF; 
     font-family: 'Press Start 2P', cursive;
+    animation: zoomBounce 1.5s ease-out;
+}
+
+@keyframes zoomBounce {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 main{
@@ -88,7 +103,7 @@ section {
     font-size: 18px;
     border-radius: 5px;
     border: 2px solid #393E46; 
-    box-shadow: 0 0px 15px white; 
+    box-shadow: 0 0px 15px rgb(255, 255, 255); 
     flex: 1; 
 }
 section:hover img {
@@ -118,10 +133,42 @@ h2 {
     font-size: 22px;
     color: #39FF14;
     font-family: 'Press Start 2P', cursive;
+    animation: zoomBounce 1.5s ease-out;
+}
+
+@keyframes zoomBounce {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 p {
     font-family: 'Press Start 2P', sans-serif;
     font-size: 16px;
     color: #ffffff;
+    animation: zoomFade 2.5s ease-in-out;
+    
+}
+
+@keyframes zoomFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
