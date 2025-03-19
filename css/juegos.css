@@ -51,6 +51,10 @@
     box-shadow: 0px 0px 10px #FFFF00, 0px 0px 40px #FFFF00;
     border: 3px solid #FFD700;
     border-color: #FFEA00;
+    animation: nombre;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
 }
 
 body{
@@ -62,6 +66,7 @@ body{
 .imagenes-juegos{
     width: 198px;
     height: 100px;
+
 }
 .botone-juegos{
     background-color: #1e1a27;
@@ -72,10 +77,26 @@ body{
     margin-top: 20px;
 }
 .botone-juegos:hover {
-    text-shadow: 0px 0px 10px #FFFF00, 0px 0px 40px #FFFF00;
-    box-shadow: 0px 0px 10px #FFFF00, 0px 0px 40px #FFFF00;
     border: 3px solid #FFD700;
     border-color: #FFEA00;
+    animation-name: nombreS;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nombreS {
+    0%{
+        border-color: rgb(255, 0, 0);}
+    25%{
+        border-color: aqua;}
+    50%{
+        border-color: #FFEA00;
+    }    
+    75%{
+        border-color: #00ff15;
+    }
+    100%{
+        border-color: rgb(255, 0, 0);}
 }
 
 a{
@@ -92,4 +113,23 @@ h1 {
     text-align: center;
     color: white;
     font-family: 'Press Start 2P', cursive;
+    animation-name: nombre;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes nombre {
+    0%{
+        color: rgb(255, 0, 0);}
+    25%{
+        color: aqua;}
+    50%{
+        color: #FFEA00;
+    }    
+    75%{
+        color: #00ff15;
+    }
+    100%{
+        color: rgb(255, 0, 0);}
 }
