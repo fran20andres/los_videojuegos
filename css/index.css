@@ -92,17 +92,6 @@ body{
         transform: translateY(0) scale(1) rotate(0deg);
     }
 }
-@keyframes pulsoBrillo {
-    0%, 100% {
-        text-shadow: 0 0 20px #BF00FF, 0px 0px 80px #BF00FF;
-        color: #BF00FF;
-    }
-    50% {
-        text-shadow: 0 0 40px #FF00FF, 0px 0px 100px #FF00FF;
-        color: #FF00FF;
-    }
-
-}
 .texto{
     color: azure;
     font-family: 'Press Start 2P', sans-serif;
@@ -122,16 +111,6 @@ body{
     100% {
         opacity: 1;
         transform: translateX(0);
-    }
-}
-@keyframes brilloTexto {
-    0%, 100% {
-        text-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
-        color: azure;
-    }
-    50% {
-        text-shadow: 0 0 20px #00FFFF, 0 0 40px #00FFFF;
-        color: #00FFFF;
     }
 }
 .contenido{
